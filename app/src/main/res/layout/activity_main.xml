@@ -47,18 +47,17 @@
         android:id="@+id/btnCalcular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="330dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="350dp"
         android:text="Calcular" />
 
     <TextView
         android:id="@+id/lblRespuesta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Respuesta: ?"
-        android:layout_marginTop="400dp"
-        android:layout_marginLeft="150dp"
-        />
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="430dp"
+        android:text="Respuesta: ?" />
 
     <RadioGroup
         android:id="@+id/optOperaciones"
@@ -91,6 +90,30 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Division" />
+
+        <RadioButton
+            android:id="@+id/optExponente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/exponente" />
+
+        <RadioButton
+            android:id="@+id/optPorcentaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/porcentaje" />
+
+        <RadioButton
+            android:id="@+id/optFactoreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/factoreo" />
+
+        <RadioButton
+            android:id="@+id/optModulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/modulo" />
     </RadioGroup>
 
     <Spinner

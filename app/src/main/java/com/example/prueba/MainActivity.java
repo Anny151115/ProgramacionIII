@@ -34,10 +34,12 @@ public class MainActivity extends Activity {
             TextView tempVal = (TextView) findViewById(R.id.txtnum1);
             double num1 = Double.parseDouble(tempVal.getText().toString());
 
+
             tempVal = (TextView) findViewById(R.id.txtnum2);
             double num2 = Double.parseDouble(tempVal.getText().toString());
 
             double respuesta = 0;
+
             //Este es para el radiogroup y los radiobuttons
             switch (optOperaciones.getCheckedRadioButtonId()) {
                 case R.id.optSuma:
@@ -51,6 +53,24 @@ public class MainActivity extends Activity {
                     break;
                 case R.id.optDivision:
                     respuesta = num1 / num2;
+                    break;
+                case R.id.optExponente:
+                    respuesta =  Math.pow(num1, num2);
+                    break;
+
+                case R.id.optPorcentaje:
+                    respuesta =  num1 * num2 / 100;
+                    break;
+
+                case R.id.optModulo:
+                    respuesta =  num1 % num2;
+                    break;
+
+                case R.id.optFactoreo:
+                    int factor = 1;
+                    for (int x = 2; x <= num1; x++)
+                        factor = factor * x;
+                    respuesta = factor;
                     break;
             }
             //Este es para el spinner... -> Combobox.
