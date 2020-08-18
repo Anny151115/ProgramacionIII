@@ -94,7 +94,7 @@ public class MainActivity extends Activity {
             TextView temp = (TextView) findViewById(R.id.lblRespuesta);
             temp.setText("Por favor ingrese los numeros correspondientes.");
 
-            Toast.makeText(getApplicationContext(),"Por favor ingrese los numeros.",Toast.LENGTH_LONG).show();
+           // Toast.makeText(getApplicationContext(),"Por favor ingrese los numeros.",Toast.LENGTH_LONG).show();
         }
     }
 }
